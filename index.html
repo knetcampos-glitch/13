@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tech Assistência | Gestão Técnica</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-icon">T</div><div><b>TECH</b><span>ASSISTÊNCIA</span></div></div>
+  <nav>
+    <a class="active" href="index.html">⌂ <span>Dashboard</span></a>
+    <a href="pages/clientes.html">♙ <span>Clientes</span></a>
+    <a href="pages/os.html">⚙ <span>Ordens de Serviço</span></a>
+    <a href="pages/financeiro.html">▣ <span>Financeiro</span></a>
+    <a href="pages/consulta.html">⌕ <span>Consulta de OS</span></a>
+    <a href="pages/configuracoes.html">⚙ <span>Configurações</span></a>
+  </nav>
+  <div class="side-bottom"><small>Sistema de gestão</small><strong>v2.0</strong></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="mobile-menu" onclick="toggleMenu()">☰</button><div><span class="eyebrow">CENTRAL DE CONTROLE</span><h1>Dashboard</h1></div><a class="user-chip" href="pages/configuracoes.html">⚡ Administração</a></header>
+<section class="hero"><div><span class="badge">● SISTEMA ONLINE</span><h2>Olá! Bem-vindo à <span>Tech Assistência.</span></h2><p>Controle seus clientes, reparos, ordens de serviço e financeiro em um só lugar.</p></div><a class="btn primary" href="pages/os.html">+ Nova ordem de serviço</a></section>
+<section class="stats">
+<div class="stat"><div class="stat-icon blue">⚙</div><div><span>OS abertas</span><strong id="openOS">0</strong></div></div>
+<div class="stat"><div class="stat-icon orange">◷</div><div><span>Em andamento</span><strong id="progressOS">0</strong></div></div>
+<div class="stat"><div class="stat-icon green">✓</div><div><span>Concluídas</span><strong id="doneOS">0</strong></div></div>
+<div class="stat"><div class="stat-icon purple">R$</div><div><span>Receita prevista</span><strong id="revenue">R$ 0,00</strong></div></div>
+</section>
+<section class="grid-2">
+<div class="panel"><div class="panel-head"><div><h3>Ordens recentes</h3><p>Últimas movimentações</p></div><a href="pages/os.html">Ver todas →</a></div><div id="recentOS" class="table-wrap"></div></div>
+<div class="panel"><div class="panel-head"><div><h3>Acesso rápido</h3><p>Principais operações</p></div></div>
+<div class="quick-grid">
+<a href="pages/clientes.html"><b>♙</b><span>Novo cliente</span><small>Cadastrar cliente</small></a>
+<a href="pages/os.html"><b>⚙</b><span>Nova OS</span><small>Abrir reparo</small></a>
+<a href="pages/consulta.html"><b>⌕</b><span>Consultar OS</span><small>Ver andamento</small></a>
+<a href="pages/financeiro.html"><b>R$</b><span>Financeiro</span><small>Controle de valores</small></a>
+</div></div>
+</section>
+<section class="panel reviews"><div class="panel-head"><div><h3>⭐ Avaliações</h3><p>Reputação da sua assistência</p></div><span class="rating">★ 5,0</span></div><div class="review-note">Configure o link do seu perfil do Google em <a href="pages/configuracoes.html">Configurações</a> para exibir o botão de avaliações.</div></section>
+<footer>© 2026 Tech Assistência · Gestão técnica inteligente</footer>
+</main></div>
+<script src="assets/app.js"></script><script>dashboard();</script>
+</body></html>
